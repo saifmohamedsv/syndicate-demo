@@ -20,7 +20,7 @@ export default function Cartificate() {
         }}
       >
         <Typography variant="h5" dir="rtl">
-          عرض البيانات في نموزج اعداد ملف الترخيص
+          عرض البيانات في {id}
         </Typography>
         <BasicTable />
       </Box>
