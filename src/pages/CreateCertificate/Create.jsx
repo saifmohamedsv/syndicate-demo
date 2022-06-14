@@ -18,16 +18,16 @@ const initValues = {
 };
 
 const validateSchema = Yup.object({
-  owner: Yup.string().required(),
-  mobile: Yup.string().required(),
-  landline: Yup.string().required(),
-  email: Yup.string().required(),
-  nationalID: Yup.string().required(),
-  address: Yup.string().required(),
-  projectAddress: Yup.string().required(),
-  section: Yup.string().required(),
-  government: Yup.string().required(),
-  city: Yup.string().required(),
+  owner: Yup.string().required(" "),
+  mobile: Yup.string().required(" "),
+  landline: Yup.string().required(" "),
+  email: Yup.string().required(" "),
+  nationalID: Yup.string().required(" "),
+  address: Yup.string().required(" "),
+  projectAddress: Yup.string().required(" "),
+  section: Yup.string().required(" "),
+  government: Yup.string().required(" "),
+  city: Yup.string().required(" "),
 });
 
 export default function Create() {
