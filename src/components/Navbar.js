@@ -196,7 +196,7 @@ function Navbar({ OnLogout, Outlet, ...props }) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            نقابه المهندسين.
+            نقابه المهندسين
           </Typography>
           <IconButton color="inherit" edge="end" onClick={OnLogout}>
             <LogoutIcon />
