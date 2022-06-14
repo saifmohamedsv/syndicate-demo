@@ -11,7 +11,7 @@ import { persistStore } from "redux-persist";
 import { Provider } from "react-redux";
 import theme from "./theme";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
-import { ChakraProvider } from "@chakra-ui/react";
+import 'antd/dist/antd.css'; 
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
