@@ -13,18 +13,7 @@ const Home = () => {
           <Statistic title="مستخدمين فعالين" value={112893} />
         </Col>
         <Col span={12}>
-          <Statistic
-            title="ميزانيه (USD)"
-            value={112893}
-          />
-          <Button
-            style={{
-              marginTop: 16,
-            }}
-            type="primary"
-          >
-            Recharge
-          </Button>
+          <Statistic title="ميزانيه (USD)" value={112893} />
         </Col>
         <Col span={12}>
           <Statistic title="طلبات تصالح" value={162376123} />
