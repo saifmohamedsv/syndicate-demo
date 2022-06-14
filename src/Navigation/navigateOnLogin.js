@@ -5,7 +5,7 @@ import { Navigate, Outlet, useLocation } from "react-router-dom";
 const OnLoginRedirect = ({ isAuth }) => {
   const location = useLocation();
   return isAuth ? (
-    <Navigate to="/home" replace state={{ from: location }} />
+    <Navigate to="/" replace state={{ from: location }} />
   ) : (
     <Outlet />
   );
