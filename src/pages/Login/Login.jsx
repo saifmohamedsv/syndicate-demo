@@ -32,8 +32,8 @@ const Login = (props) => {
                 <Typography variant="h1" color={"primary.main"} sx={FormTitle}>
                   تسجيل الدخول
                 </Typography>
-                <InputHandler fullWidth name="email" label="بريد الكتروني *" />
-                <InputHandler fullWidth name="password" label="كلمه سر *" />
+                <InputHandler fullWidth name="email" type="email" label="بريد الكتروني *" />
+                <InputHandler fullWidth name="password" type="password" label="كلمه سر *" />
                 <Button
                   fullWidth
                   variant="contained"

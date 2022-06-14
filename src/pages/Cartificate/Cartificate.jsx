@@ -8,7 +8,7 @@ export default function Cartificate() {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: "24px" }}>
       <Typography variant="h3" dir="rtl">
-       {id}
+        {id}
       </Typography>
       <Box
         sx={{

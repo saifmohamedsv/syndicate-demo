@@ -6,7 +6,7 @@ import OnLoginRedirect from "../Navigation/navigateOnLogin";
 import { OnLogout } from "../store/actions/Logout";
 import Home from "../pages/Home/Home";
 import Cartificate from "../pages/Cartificate/Cartificate";
-
+import Create from "../pages/CreateCertificate/Create";
 function App({ OnLogout, ...props }) {
   return (
     <div className="App">
@@ -19,6 +19,7 @@ function App({ OnLogout, ...props }) {
             <Route index element={<Home />} />
             <Route path="home" exact element={<Home />}>
               <Route path=":id" exact element={<Cartificate />} />
+              <Route path=":id/create-certificate" exact element={<Create />} />
             </Route>
           </Route>
         </Routes>
