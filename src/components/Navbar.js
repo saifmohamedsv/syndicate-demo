@@ -106,7 +106,7 @@ function Navbar({ OnLogout, ...props }) {
                     variant="outlined"
                     fullWidth
                     onClick={() => {
-                      router(`${sub.id}`);
+                      router(`/certs/${sub.id}`);
                     }}
                   >
                     {sub.label}

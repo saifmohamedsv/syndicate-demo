@@ -17,11 +17,11 @@ function App({ OnLogout, ...props }) {
             <Route path="login" exact element={<Login />} />
           </Route>
           <Route element={<ProtectedRoutes />}>
-            <Route path="home" exact element={<Navbar />}>
-              {/* <Route path="" element={<Home />} /> */}
-              <Route index element={<Home />} />
-              <Route path=":id" exact element={<Cartificate />} />
-              <Route path=":id/create-certificate" exact element={<Create />} />
+            {/* <Route index element={<Home />} /> */}
+            <Route path="/" exact element={<Navbar />}>
+              <Route path="" element={<Home />} />
+              <Route path="certs/:id" exact element={<Cartificate />} />
+              <Route path="certs/:id/create-certificate" exact element={<Create />} />
             </Route>
           </Route>
         </Routes>
