@@ -80,7 +80,12 @@ export default function Create() {
                 />
               </Grid>
               <Grid item xs={12}>
-                <Button sx={{ p: 1 }} fullWidth variant="contained">
+                <Button
+                  type="submit"
+                  sx={{ p: 1 }}
+                  fullWidth
+                  variant="contained"
+                >
                   SAVE
                 </Button>
               </Grid>
