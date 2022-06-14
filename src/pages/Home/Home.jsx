@@ -7,7 +7,7 @@ import { Button, Col, Row, Statistic } from "antd";
 const Home = () => {
   return (
     <Box>
-      <Navbar Outlet={Outlet} />
+      {/* <Navbar Outlet={Outlet} /> */}
       <Row style={{ padding: "24px" }} gutter={16}>
         <Col span={12}>
           <Statistic title="مستخدمين فعالين" value={112893} />
@@ -16,7 +16,6 @@ const Home = () => {
           <Statistic
             title="ميزانيه (USD)"
             value={112893}
-            precision={2}
           />
           <Button
             style={{

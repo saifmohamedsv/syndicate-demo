@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Outlet } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -58,7 +58,7 @@ const Links = [
   },
 ];
 
-function Navbar({ OnLogout, Outlet, ...props }) {
+function Navbar({ OnLogout, ...props }) {
   const drawerWidth = 240;
 
   const { window } = props;
@@ -206,9 +206,5 @@ function Navbar({ OnLogout, Outlet, ...props }) {
     </Box>
   );
 }
-
-Navbar.propTypes = {
-  window: PropTypes.func,
-};
 
 export default connect(null, { OnLogout })(Navbar);
